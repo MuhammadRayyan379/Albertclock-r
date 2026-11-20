@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Alberto Watch Company - Luxury Timepieces"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<title>Alberto Watches</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Alberto Watch Co.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="product.html?category=vintage">Vintage</a></li>
+                            <li><a class="dropdown-item" href="product.html?category=luxury">Luxury</a></li>
+                            <li><a class="dropdown-item" href="product.html?category=smart">Smart Watches</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="technology.html">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="store.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="compare.html">Compare</a>
+                    </li>
+                </ul>
+                <div class="visitor-count">
+                    <span>Visitors: </span><span id="visitorCount">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="mainCarousel" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+        </div>
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/Image-01.jpg" class="d-block w-100" alt="Luxury Watches">
+                <div class="carousel-caption">
+                    <h2>Luxury Collection</h2>
+                    <p>Explore exclusive branded timepieces</p>
+                    <a href="product.html" class="btn btn-gold">View Products</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Images/Image-02.jpg" class="d-block w-100" alt="Vintage Watches">
+                <div class="carousel-caption">
+                    <h2>Classic Vintage</h2>
+                    <p>Timeless beauty crafted with perfection</p>
+                    <a href="about.html" class="btn btn-gold">Explore Now</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Images/Image-03.jpg" class="d-block w-100" alt="Smart Watches">
+                <div class="carousel-caption">
+                    <h2>Modern Smart Watches</h2>
+                    <p>Innovative technology on your wrist</p>
+                    <a href="technology.html" class="btn btn-gold">Discover More</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Product Line-Up</h2>
+            <p class="section-subtitle">Choose from our exclusive range of timeless pieces</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="Images/Image-04.jpg" class="card-img-top" alt="Vintage Watches">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Vintage Collection</h4>
+                        <p class="card-text">Classic designs with timeless craftsmanship and history.</p>
+                        <a href="product.html?category=vintage" class="btn btn-gold">Explore Vintage</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="Images/Image-05.svg" class="card-img-top" alt="Luxury Watches">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Luxury Collection</h4>
+                        <p class="card-text">Premium luxury timepieces from top international brands.</p>
+                        <a href="product.html?category=luxury" class="btn btn-gold">Explore Luxury</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="Images/Image-06.svg" class="card-img-top" alt="Smart Watches">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Smart Watches</h4>
+                        <p class="card-text">Modern technology, smart health tracking, and style.</p>
+                        <a href="product.html?category=smart" class="btn btn-gold">Explore Smart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 py-3">
+        <div class="row g-4 text-center">
+            <div class="col-md-3 col-sm-6">
+                <div class="service-box">
+                    <i class="fas fa-certificate service-icon"></i>
+                    <h5 class="service-title">100% Authentic</h5>
+                    <p class="service-text">Guaranteed original luxury watches from official distributors.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-box">
+                    <i class="fas fa-tools service-icon"></i>
+                    <h5 class="service-title">Expert Repair</h5>
+                    <p class="service-text">Master technicians for battery, service, and full restoration.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-box">
+                    <i class="fas fa-award service-icon"></i>
+                    <h5 class="service-title">Watch Appraisal</h5>
+                    <p class="service-text">Official valuation certificates for insurance and market value.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-box">
+                    <i class="fas fa-shipping-fast service-icon"></i>
+                    <h5 class="service-title">Insured Shipping</h5>
+                    <p class="service-text">Complimentary, secure and fully insured worldwide delivery.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container my-5 py-4">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <span class="about-tag">CRAFTSMANSHIP & LEGACY</span>
+                <h2 class="about-heading mt-2">About Alberto Watch Company</h2>
+                <p class="about-desc mt-3">
+                    Alberto Watch Company is a full-service watch repair, appraisal, and retail boutique offering the finest selection of luxury timepieces. We pride ourselves on unparalleled customer service and authentic craftsmanship.
+                </p>
+                <p class="about-desc">
+                    From rare vintage mechanical watches to modern smart wearables, we carry world-renowned brands including Rolex, Bulova, Michael Kors, and Citizen Eco-Drive.
+                </p>
+                <div class="row text-center my-4 g-2">
+                    <div class="col-4">
+                        <div class="stat-box">
+                            <h3>30+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="stat-box">
+                            <h3>100%</h3>
+                            <p>Certified Authentic</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="stat-box">
+                            <h3>50k+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="about.html" class="btn btn-gold">Discover Our Story</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="about-img-box">
+                    <img src="Images/Image-01.jpg" class="img-fluid rounded shadow" alt="Alberto Watch Craftsmanship">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="fwrap">
+            <div class="fbox">
+                <h5>Alberto Watches</h5>
+                <p>Luxury watch store offering timepieces, repair, and appraisal since 1990.</p>
+            </div>
+            <div class="fbox">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="fbox">
+                <h5>Contact Info</h5>
+                <p>albertowatch@gmail.com</p>
+                <p>111-252-111</p>
+                <p>450 N Rodeo Drive, Beverly Hills, CA 90210</p>
+            </div>
+        </div>
+        <p class="fcopy">&copy; 2026 Alberto Watch Company. All Rights Reserved.</p>
+    </footer>
+<script src="../script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

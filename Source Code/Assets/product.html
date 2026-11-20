@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Alberto Watch Company - Luxury Timepieces"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Products</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark nbar fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Alberto Watch Co.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="product.html?category=vintage">Vintage</a></li>
+                <li><a class="dropdown-item" href="product.html?category=luxury">Luxury</a></li>
+                <li><a class="dropdown-item" href="product.html?category=smart">Smart Watches</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="technology.html">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="store.html">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="compare.html">Compare</a>
+            </li>
+          </ul>
+          <span class="vcounter">Visitors: <span id="visitorCount">0</span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="head">
+        <h1>Our Products</h1>
+        <p>Explore our exclusive collection of luxury and vintage timepieces</p>
+    </div>
+
+    <div class="tabs">
+        <button class="active" onclick="filter('all')">All</button>
+        <button onclick="filter('vintage')">Vintage</button>
+        <button onclick="filter('luxury')">Luxury</button>
+        <button onclick="filter('smart')">Smart</button>
+    </div>
+
+    <div class="grid">
+       <div class="box vintage">
+            <img src="Images/Vintage/Image-P-05.png" alt="Omega">
+            <h3>Omega</h3>
+            <p class="price">$3,200</p>
+            <button>Details</button>
+        </div>
+
+        <div class="box vintage">
+            <img src="Images/Vintage/Image-P-01.png" alt="Longines">
+            <h3>Longines</h3>
+            <p class="price">$2,800</p>
+            <button>Details</button>
+        </div>
+
+        <div class="box vintage">
+           <img src="Images/Vintage/Image-P-06.png" alt="Tissot">
+           <h3>Tissot</h3>
+           <p class="price">$1,950</p>
+           <button>Details</button>
+       </div>
+
+        <div class="box vintage">
+            <img src="Images/Vintage/Image-P-02.png" alt="Hamilton">
+            <h3>Hamilton</h3>
+            <p class="price">$1,500</p>
+            <button>Details</button>
+        </div>
+
+        <div class="box vintage">
+            <img src="Images/Vintage/Image-P-03.png" alt="Seiko">
+            <h3>Seiko</h3>
+            <p class="price">$850</p>
+            <button>Details</button>
+        </div>
+
+        <div class="box vintage">
+            <img src="Images/Vintage/Image-P-04.png" alt="Bulova">
+            <h3>Bulova</h3>
+            <p class="price">$1,100</p>
+            <button>Details</button>
+        </div>
+
+        <div class="box luxury">
+            <img src="Images/Luxury/Image_P01.png" alt="Rolex">
+            <h3>Rolex</h3>
+            <p class="price">$9,500</p>
+            <button>Details</button>
+        </div>
+
+        <div class="box luxury">
+            <img src="Images/Luxury/Image_P02.png" alt="Patek Philippe">
+            <h3>Patek Philippe</h3>
+            <p class="price">$28,000</p>
+            <button>Details</button>
+        </div>
+
+        <div class="box luxury">
+            <img src="Images/Luxury/Image_P05.png" alt="Audemars Piguet">
+            <h3>Audemars Piguet</h3>
+            <p class="price">$22,500</p>
+            <button>Details</button>
+        </div>
+
+        <div class="box luxury">
+            <img src="Images/Luxury/Image_P06.png" alt="Cartier">
+            <h3>Cartier</h3>
+            <p class="price">$6,800</p>
+            <button>Details</button>
+        </div>
+
+        <div class="box luxury">
+            <img src="Images/Luxury/Image_P04.png" alt="TAG Heuer">
+            <h3>TAG Heuer</h3>
+            <p class="price">$4,200</p>
+            <button>Details</button>
+        </div>
+
+        <div class="box luxury">
+            <img src="Images/Luxury/Image_P03.png" alt="Breitling">
+            <h3>Breitling</h3>
+            <p class="price">$5,600</p>
+            <button>Details</button>
+        </div>
+
+        <div class="box smart">
+            <img src="Images/Smart/Image_p_01.jfif" alt="Apple Watch">
+            <h3>Apple Watch</h3>
+            <p class="price">$799</p>
+            <button>Details</button>
+        </div>
+
+        <div class="box smart">
+            <img src="Images/Smart/Image_p_03.jfif" alt="Samsung Galaxy Watch">
+            <h3>Samsung Galaxy Watch</h3>
+            <p class="price">$399</p>
+            <button>Details</button>
+        </div>
+
+        <div class="box smart">
+            <img src="Images/Smart/Image_p_06.jfif" alt="Garmin">
+            <h3>Garmin</h3>
+            <p class="price">$650</p>
+            <button>Details</button>
+        </div>
+
+        <div class="box smart">
+            <img src="Images/Smart/Image_p_04.jfif" alt="Fossil">
+            <h3>Fossil</h3>
+            <p class="price">$295</p>
+            <button>Details</button>
+        </div>
+
+        <div class="box smart">
+            <img src="Images/Smart/Image_p_05.jfif" alt="Michael Kors">
+            <h3>Michael Kors</h3>
+            <p class="price">$350</p>
+            <button>Details</button>
+        </div>
+
+        <div class="box smart">
+            <img src="Images/Smart/Image_p_02.jfif" alt="Citizen Eco-Drive">
+            <h3>Citizen Eco-Drive</h3>
+            <p class="price">$475</p>
+            <button>Details</button>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="fwrap">
+            <div class="fbox">
+                <h5>Alberto Watches</h5>
+                <p>Luxury watch store offering timepieces, repair, and appraisal since 1990.</p>
+            </div>
+            <div class="fbox">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="fbox">
+                <h5>Contact Info</h5>
+                <p>albertowatch@gmail.com</p>
+                <p>111-252-111</p>
+                <p>450 N Rodeo Drive, Beverly Hills, CA 90210</p>
+            </div>
+        </div>
+        <p class="fcopy">&copy; 2026 Alberto Watch Company. All Rights Reserved.</p>
+    </footer>
+
+<script src="../script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
