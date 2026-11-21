@@ -32,7 +32,7 @@ if (cat) {
     filter(cat);
 }
 
-var watchData = {
+let watchData = {
     "Omega": { move: "Mechanical Automatic", water: "100m", year: "1968", war: "2 Years" },
     "Longines": { move: "Manual Hand-Wind", water: "50m", year: "1972", war: "2 Years" },
     "Tissot": { move: "Automatic", water: "50m", year: "1975", war: "2 Years" },
@@ -71,10 +71,10 @@ var watchData = {
 };
 
 function openModal(btn) {
-    var box = btn.parentElement;
-    var brand = box.querySelector("h3").innerText;
-    var price = box.querySelector(".price").innerText;
-    var img = box.querySelector("img").src;
+    let box = btn.parentElement;
+    let brand = box.querySelector("h3").innerText;
+    let price = box.querySelector(".price").innerText;
+    let img = box.querySelector("img").src;
 
     document.getElementById("mBrand").innerText = brand;
     document.getElementById("mPrice").innerText = price;
