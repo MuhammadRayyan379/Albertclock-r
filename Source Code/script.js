@@ -93,3 +93,9 @@ function openModal(btn) {
 function closeModal() {
     document.getElementById("modal").classList.remove("show");
 }
+
+function sendMsg(event) {
+    event.preventDefault();
+    alert("Thank you! Your message has been sent successfully.");
+    event.target.reset();
+}
