@@ -2,10 +2,13 @@ var count = localStorage.getItem("visitorCount");
 if (count === null) {
     count = 1;
 } else {
-    count = parseInt(count);
+    count = parseInt(count) + 1;
 }
 localStorage.setItem("visitorCount", count);
-document.getElementById("visitorCount").textContent = count;
+var vEl = document.getElementById("visitorCount");
+if (vEl) {
+    vEl.textContent = count;
+}
 
 function filter(name) {
     let btns = document.querySelectorAll(".tabs button");
@@ -41,7 +44,7 @@ let watchData = {
     "Bulova": { move: "Tuning Fork Quartz", water: "30m", year: "1971", war: "2 Years" },
     "Tudor": { move: "Self-Winding Automatic", water: "100m", year: "1969", war: "2 Years" },
     "Zenith": { move: "El Primero Automatic", water: "100m", year: "1970", war: "2 Years" },
-    "Universal Genève": { move: "Micro-Rotor Automatic", water: "50m", year: "1966", war: "2 Years" },
+    "Universal Geneve": { move: "Micro-Rotor Automatic", water: "50m", year: "1966", war: "2 Years" },
     "Enicar": { move: "Manual Hand-Wind", water: "30m", year: "1964", war: "2 Years" },
     "Wittnauer": { move: "Mechanical Hand-Wind", water: "30m", year: "1967", war: "2 Years" },
     "Elgin": { move: "Vintage Manual", water: "30m", year: "1958", war: "2 Years" },
@@ -91,7 +94,10 @@ function openModal(btn) {
 }
 
 function closeModal() {
-    document.getElementById("modal").classList.remove("show");
+    let m = document.getElementById("modal");
+    if (m) {
+        m.classList.remove("show");
+    }
 }
 
 function sendMsg(event) {
