@@ -2,7 +2,7 @@ var count = localStorage.getItem("visitorCount");
 if (count === null) {
     count = 1;
 } else {
-    count = parseInt(count) + 1;
+    count = parseInt(count);
 }
 localStorage.setItem("visitorCount", count);
 var vEl = document.getElementById("visitorCount");
