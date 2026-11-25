@@ -553,6 +553,10 @@ body {
     border-radius: 4px;
 }
 
+textarea.cinp {
+    resize: none;
+}
+
 .cinp:focus {
     background-color: #1a1a1a;
     border-color: #D4AF37;
